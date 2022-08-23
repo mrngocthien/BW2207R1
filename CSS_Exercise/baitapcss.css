@@ -1,0 +1,30 @@
+table {
+    /* Bỏ viền của bảng*/
+    border-collapse: collapse;
+    /*set độ rộng của bảng*/
+    width: 100%;
+}
+
+th, td {
+    /*Căn vănn bản theo chiều ngang (trái/phải/giữa)*/
+    text-align: left;
+    padding: 8px;
+}
+td {
+    /*Set chiều cao của văn bản*/
+    height: 50px;
+    /*Căn chỉnh văn bảnn theo chiều dọc (trên/dưới/giữa)*/
+    vertical-align: bottom;
+}
+
+tr:nth-child(even){
+    /*Set màu nền cho*/
+    background-color: #f2f2f2
+}
+
+th {
+    /*Set màu nền văn bản*/
+    background-color: #4CAF50;
+    /*Set màu chữ của văn bản */
+    color: white;
+}

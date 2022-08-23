@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+</head>
+<body style="font-family:sans-serif ;">
+
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey</p><hr>
+    
+    <form action="">
+
+        What is your age range?<br>
+        <select style="width: 500px;" name="" id="age_ranger">
+            <option value="">18-24</option>
+            <option value="">25-34</option>
+            <option value="">35-49</option>
+            <option value="">50+</option>
+        </select><br><br>
+
+        What is your yearly income range?<br>
+        <select style="width: 500px;" name="" id="age_ranger">
+            <option value="">$0 - $25,000</option>
+            <option value="">$25,001 - $50,000</option>
+            <option value="">$50,001 - $100,000</option>
+            <option value="">$100,000+</option>
+        </select><br><br>
+
+        Gender Identity <br><br>
+        <input type="radio" name="" id=""> Male <br><br>
+        <input type="radio" name="" id=""> Female <br><br>
+        <input type="radio" name="" id=""> Nonbinary <br><br>
+        <input type="radio" name="" id="myCheck" onclick="myFunction()"> Other <br><br>
+        <input type="text" name="" id="" style="margin-left: 25px;"><br><br>
+        <p id="text" style="display: none;">Maximum of 250 characters</p><br><br>
+
+        Which of the following products have your purchased in the last 2 months. Please check all that apply. <br><br>
+        <input type="checkbox" name="" id=""> Product 1 <br><br>
+        <input type="checkbox" name="" id=""> Product 2 <br><br>
+        <input type="checkbox" name="" id=""> Product 3 <br><br>
+
+        How often would you use our new product? <br><br>
+        <input type="radio" name="" id=""> Daily <br><br>
+        <input type="radio" name="" id=""> Weekly <br><br>
+        <input type="radio" name="" id=""> Monthly <br><br>
+
+        What would you pay for the new product?
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="text" name="dollars" id="" style="width: 100px;"></td>
+                <td>.</td>
+                <td><input type="text" name="cents" id="" style="width: 50px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </table><br>
+
+        What features would you like to see in the new product. <br><br>
+        <textarea name="" id="" cols="190" rows="10"></textarea><br><br>
+
+        Please rate your level of agreement with the following statements
+        <table>
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Our products are priced fairly.</th>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 1</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 2</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 3</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 4</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Our products are high quality.</th>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 1</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 2</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 3</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 4</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">You would recommened our product to a friend pr coworker.</th>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 1</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 2</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 3</td>
+                <td style="text-align: center;"><input type="radio" name="" id=""><br> 4</td>
+            </tr>
+        </table>
+
+    </form>
+    <script>
+       function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true){
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
