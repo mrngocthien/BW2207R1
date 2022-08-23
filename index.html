@@ -7,9 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <!--command + /-->
-    <h1>Ho Ngoc Thien</h1>
-    <p>Xin chao Co va ca lop</p>
-    <img src="" alt="">
+      <form action="https://www.google.com.vn/">
+        <input type="text" name="q"/>
+        <input type="submit" value="Tìm kiếm"/>
+      </form>
+      <form action="/action_page.php">
+        First name:<br>
+        <input type="text" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Personal information:</legend>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+      <form method="POST">
+        <input name="secret" value="abcg124faasfjh149dfd" type="hidden"/>
+        Account: <input name="account" value="admin" type="text"/><br/>
+        Sở thích:<br/>
+        <label><input name="hobby" value="travel" type="radio" checked/> Du lịch</label> <br/>
+        <label><input name="hobby" value="sport" type="radio"/> Thể thao</label> <br/>
+        <label><input name="hobby" value="cooking" type="radio"/> Nấu ăn</label> <br/>
+        <input type="submit" value="Send data"/>
+      </form>
 </body>
 </html>

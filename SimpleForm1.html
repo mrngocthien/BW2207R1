@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <table style="width: 500px;">
+        <tr>
+            <th colspan="4" style= "background-color: orange; color: white ; font-size: 25px;">SỞ THÍCH CỦA BẠN</th>  
+        </tr>
+        <tr>
+            <td style="color: blue; text-align: right">Email</td>
+            <td><input type="text" style="width: 200px;" name="email"></td>
+        </tr>
+        <tr>
+            <td style="color: blue; text-align: right">Họ và Tên</td>
+            <td><input type="text" name="yourname"></td>
+        </tr>
+        <tr>
+            <td style="color: blue; text-align: right">Sở thích</td>
+            <td><input type="checkbox">Thể thao</td>
+            <td><input type="checkbox">Âm nhạc</td>
+            <td><input type="checkbox">Đọc sách</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">Lướt web</td>
+            <td><input type="checkbox">Chơi game</td>
+            <td><input type="checkbox">Điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">Du lịch</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+       
+    </table>
+    <br>
+
+    <table style="width: 500px; background-color:rgb(247, 242, 170);">
+        <tr>
+            <th colspan="4" style= "background-color: rgb(0, 255, 238); color: blue ; font-size: 25px; text-align: left;">ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td style="color: blue; text-align: left">Họ và tên</td>
+            <td><input type="text" style="width: 200px;" name="yourname"></td>
+        </tr>
+        <tr>
+            <td style="color: blue; text-align: left">Ngày sinh</td>
+            <td><input type="text"></td>
+        </tr>
+    
+        <tr>
+            <td style="color: blue; text-align: left">Giới tính</td>
+            <td style="float:left;"><input type="radio" name="nam" id="">Nam</td>
+            <td style="float:left;"><input type="radio" name="nu" id="">Nữ</td>
+        </tr>
+        
+
+        <tr>
+            <td style="color: blue; text-align: left">Địa chỉ</td>
+            <td><textarea name="dia chi" id="" cols="40" rows="7"></textarea></td>
+        </tr><br>
+        <tr>
+            <td style="color: blue; text-align: left">Lớp</td>
+            <td><select name="" id="lop">
+                <option value="Chon_lop">--Chọn lớp--</option>
+                <option value="Lop_A">Lớp A</option>
+                <option value="Lop_B">Lớp B</option>
+            </select></td>
+        </tr><br>
+        <tr>
+            <td style="color: blue; text-align: left">Email</td>
+            <td><input type="text" style="width: 170px" name="email"></td>
+        </tr><br>
+        <tr>
+            <td style="color: blue; text-align: left">Điện thoại</td>
+            <td><input type="text" style="width: 170px"></td>
+        </tr><br>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
