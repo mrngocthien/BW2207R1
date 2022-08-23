@@ -10,7 +10,7 @@ table {
 th, td {
     /*Căn vănn bản theo chiều ngang (trái/phải/giữa)*/
     text-align: left;
-    /**/
+    /*Tạo khoảng cách giữa đường viền và nội dung của bảng*/
     padding: 8px;
 }
 td {
