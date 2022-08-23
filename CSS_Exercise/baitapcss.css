@@ -1,4 +1,6 @@
 table {
+    /* Tạo viền cho bảng*/
+    border: 1px solid black;
     /* Bỏ viền của bảng*/
     border-collapse: collapse;
     /*set độ rộng của bảng*/
@@ -8,6 +10,7 @@ table {
 th, td {
     /*Căn vănn bản theo chiều ngang (trái/phải/giữa)*/
     text-align: left;
+    /**/
     padding: 8px;
 }
 td {
@@ -18,7 +21,7 @@ td {
 }
 
 tr:nth-child(even){
-    /*Set màu nền cho*/
+    /*Set màu nền cho các dòng chẵn*/
     background-color: #f2f2f2
 }
 
