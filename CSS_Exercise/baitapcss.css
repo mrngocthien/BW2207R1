@@ -1,7 +1,7 @@
 table {
-    /* Tạo viền cho bảng*/
+    /* Tạo viền cho bảng (mặc định viền đôi)*/
     border: 1px solid black;
-    /* Bỏ viền của bảng*/
+    /* tạo viền đơn cho bảng*/
     border-collapse: collapse;
     /*set độ rộng của bảng*/
     width: 100%;

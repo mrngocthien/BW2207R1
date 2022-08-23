@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market Research Survey</title>
 </head>
+<style>
+    .tbl2, .tbl2 td, .tbl2 th {
+        border: 1px solid black; 
+        border-collapse: collapse;
+    }
+</style>
 <body style="font-family:sans-serif ;">
 
     <h2>Market Research Survey</h2>
@@ -64,16 +70,16 @@
         </table><br>
 
         What features would you like to see in the new product. <br><br>
-        <textarea name="" id="" cols="190" rows="10"></textarea><br><br>
+        <textarea name="" id="" cols="150" rows="10"></textarea><br><br>
 
-        Please rate your level of agreement with the following statements
-        <table>
-            <tr>
-                <th></th>
-                <th>Strongly Disagree</th>
-                <th>Disagree</th>
-                <th>Agree</th>
-                <th>Strongly Agree</th>
+        Please rate your level of agreement with the following statements.
+        <table class="tbl2" >
+            <tr style="background-color:rgb(248, 245, 245); height: 40px ;">
+                <th style="width: 400px;"></th>
+                <th style="width: 150px;">Strongly Disagree</th>
+                <th style="width: 150px;">Disagree</th>
+                <th style="width: 150px;">Agree</th>
+                <th style="width: 150px;">Strongly Agree</th>
             </tr>
             <tr>
                 <th style="text-align: left;">Our products are priced fairly.</th>
@@ -82,21 +88,21 @@
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 3</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 4</td>
             </tr>
-            <tr>
-                <th style="text-align: left;">Our products are high quality.</th>
+            <tr style="background-color:rgb(248, 245, 245) ;">
+                <th style="text-align: left; ">Our products are high quality.</th>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 1</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 2</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 3</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 4</td>
             </tr>
             <tr>
-                <th style="text-align: left;">You would recommened our product to a friend pr coworker.</th>
+                <th style="text-align: left;">You would recommened our product to a friend or coworker.</th>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 1</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 2</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 3</td>
                 <td style="text-align: center;"><input type="radio" name="" id=""><br> 4</td>
-            </tr>
-        </table>
+            </tr><br><br>
+        </table><br>
 
     </form>
     <script>
