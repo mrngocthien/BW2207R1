@@ -1,0 +1,54 @@
+ul.a {
+    /*Set kiểu đánh dấu mục là dạng hình tròn*/
+    list-style-type: circle;
+    /*Set vị trí đặt các đánh dấu mục, ở đây là bên trong nội dung */
+    list-style-position:inside;
+}
+
+ul.b {
+    /*Set kiểu đánh dấu mục là dạng hình tròn*/
+    list-style-type: square;
+    /*Set vị trí đặt các đánh dấu mục, ở đây là bên ngoài nội dung */
+    list-style-position:outside;
+}
+
+ol.c {
+    /*Set kiểu đánh dấu mục là chữ cái la mã in hoa*/
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    /*Set kiểu đánh dấu mục là chữ cái alpha in thường*/
+    list-style-type: lower-alpha;
+}
+ol {
+    /*Set màu nền*/
+    background: #ff9999;
+    /*Set khoảng đệm*/
+    padding: 20px;
+}
+
+ul {
+    /*Gộp nhiều giá trị thiết lập trong 1 thuộc tính*/
+    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+
+    background: #ffe5e5;
+    padding: 5px;
+    /*Căn chỉnh các list theo bên trái*/
+    margin-left: 35px;
+}
+
+ul li {
+    background: #cce5ff;
+    /*căn chỉnh khoảng cách giữa các list*/
+    margin: 5px;
+}
+ul.e {
+    /*Dùng hình ảnh có đường dẫn bên dưới để làm đánh dấu các mụcc của danh sách*/
+    list-style-image: url('http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png');
+}
