@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(234, 229, 229);
+    }
+    * {
+        box-sizing: border-box;
+    }
+    #header {
+        height: 100px;
+        background-color: rgb(2, 2, 110);
+        color: whitesmoke;
+        text-align: center;
+    }
+    #sidebar_left {
+        width: 20%;
+        background-color:rgb(246, 148, 227);
+        height: 600px;
+        float: left;
+        padding: 10px;
+    }
+    #content {
+        width: 50%;
+        background-color: white;
+        height: 600px;
+        float: left;
+        padding: 20px;
+    }
+    #content #content_top {
+        background-color: aqua;
+        height: 30%;
+        border-radius: 10px;
+    }
+    #content #content_bottom {
+        background-color: aquamarine;
+        height: 70%;
+        border-radius: 10px;
+    }
+    #sidebar_right {
+        width: 30%;
+        background-color: rgb(255, 255, 255);
+        height: 600px;
+        float: left;
+        padding: 20px;
+    }
+    #sidebar_right #sidebar_right_top {
+        background-color: rgb(127, 206, 255);
+        height: 40%;
+        border-radius: 10px;
+    }
+    #sidebar_right #sidebar_right_bottom {
+        background-color: rgb(234, 255, 127);
+        height: 60%;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div id="header"></div>
+    <div id="sidebar_left"></div>
+    <div id="content">
+        <div id="content_top"></div> <br>
+        <div id="content_bottom"></div>
+    </div>
+    <div id="sidebar_right">
+        <div id="sidebar_right_top"></div> <br>
+        <div id="sidebar_right_bottom"></div>
+    </div>
+</body>
+</html>
