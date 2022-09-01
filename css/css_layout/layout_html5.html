@@ -4,99 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Hoạt Hình</title>
 </head>
 <style>
     * {
         box-sizing: border-box;
+        font-family: sans-serif;
+        color: black;
+        font-size: 14px;
     }
-    header {
-        height: 50px;
-        background-color: darkgray;
+    body,p {
+        margin: 0;
+        padding: 0;
     }
-    nav {
+    /* header */
+        header {
+            height: 50px;
+            background-color: lightgray;
+            position: fixed;
+            width: 100%;
+            top: 0px; 
+        }
+        #logo {
+            height: 100%;
+        }
+    /* Nav bar */
+        nav {
+            height: 30px;
+            background-color: rgb(188, 182, 182);  
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            top: 45px;
+            width: 100%;
+        } 
+        nav ul {
+            padding: 5px;
+        } 
+        nav ul li:hover {
+            background-color: rgb(242, 242, 62);
+            font-weight: bold;
+        }       
+        nav ul li {
+            padding: 5px;
+            display: inline;
+        }
+        nav li a{
+            text-decoration:none;
+        }
+    /* Left content */
+        aside {
+            width: 30%;
+            background-color: lightgray;
+            float: left;
+            margin-top: 45px;
+            margin-bottom: 10px;
+            margin-right: 1%;
+        }
+        aside div {
+            padding: 10px;
+        }
+        aside div img {
+            width: 100%;
         
-        background-color: rgb(141, 246, 141);
+        }
+    /* right content */
+        article {
+            width: 69%;
+            background-color: white;
+            float: left;
+            margin-top: 45px;
+            margin-bottom: 10px;
+        }
+        article #video_player,p {
+            width: 70%;
+        }
+    /* footer */
+        footer {
+            height: 50px;
+            background-color: rgb(231, 171, 171);
+            clear: both;   
+            text-align: center;
+            padding: 15px; 
+        }
+        footer p {
+            display: inline;
+              
+        }
         
-    }
-    
-    nav ul li {
-        display: inline;
-
-        
-    }
-    
-    aside {
-        width: 30%;
-        height: 500px;
-        background-color: darkorange;
-        float: left;
-        overflow: auto;
-    }
-    article {
-        width: 70%;
-        height: 500px;
-        background-color: dimgray;
-        float: left;
-    }
-    article iframe {
-        width: 70%;
-        height: 70%;
-    }
-    footer {
-        height: 40px;
-        background-color: aquamarine;
-        clear: both;
-    }
-    footer p {
-        text-align: center;
-        padding-top: 10px;
-    }
-    aside div img {
-        width: 100%;
-    
-    }
-    aside div img,p {
-        padding: 10px 10px 0px 10px;
-    }
 </style>
 <body>
     <header>
-        
+        <img id="logo" src="./images/logo.jpg" alt="">
     </header>
     <nav>
-        <div>
-            <ul>
-                <li><a href="#">Phim hoat hinh</a></li>
-                <li>|</li>
-                <li><a href="#">Phim hoat hinh yeu thich</a></li>
-                <li>|</li>
-                <li><a href="#">Nhan vat hoat hinh</a></li>
-                <li>|</li>
-                <li><a href="#">Gop y</a></li>
-            </ul>
-        </div>
-        
+        <ul>
+            <li><a href="#">Phim hoạt hình</a></li>
+            <li>|</li>
+            <li><a href="#">Phim hoạt hình yêu thích</a></li>
+            <li>|</li>
+            <li><a href="#">Nhân vật hoạt hình</a></li>
+            <li>|</li>
+            <li><a href="#">Góp ý</a></li>
+        </ul>
     </nav>
     <aside>
         <div>
             <img src="./images/1.jpeg" alt="">
-            <p><b>Welcome den voi khac san nobi</b>-5.320.000 luot xem</p>
+            <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
             <p>Chanel Fun</p> 
         </div>
         <div>
             <img src="./images/1.jpeg" alt="">
-            <p><b>Welcome den voi khac san nobi</b>-5.320.000 luot xem</p>
+            <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
             <p>Chanel Fun</p> 
         </div>
+        <div>
+            <img src="./images/1.jpeg" alt="">
+            <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
+            <p>Chanel Fun</p> 
+        </div>
+        <div>
+            <img src="./images/1.jpeg" alt="">
+            <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
+            <p>Chanel Fun</p> 
+        </div>
+        
     </aside>
     <article>
-        <iframe src="https://www.youtube.com/embed/hSvkzXZPYQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><b>Welcome den voi khac san nobi</b>-5.320.000 luot xem</p>
-        <p>Chanel Fun</p> 
+        <iframe width="600px" height="400px" id="video_player" src="https://www.youtube.com/embed/hSvkzXZPYQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p><br>
+        <p>Lời tựa :</p><br>
+        <p>Bộ phim kể lột tả văn hoá của đất nước mặt trời mọc (Nhật bản), xoay quanh 2 nhân vật chính là Mèo máy Doreamon và Nobita hậu đậu. Cùng các nhân vật khác tạo nên một chuỗi các cuộc phiêu lưu kì thú xuyên thời không. Đôi lúc chỉ đơn giản là những chuyện đời thường, nhưng có lúc xảy ra các biến cố sống còn dẫn đến các cuộc chiến đấu trước thế lực siêu nhiên để bảo vệ trái đất.  </p>
     </article>
     <footer>
-        <p><b>Coppyright 2017 - Thiet ke web boi trang hoathinhvn.net</b></p>
+        <p><b>Coppyright 2017 - Thiết kế web bởi trang hoathinhvn.net</b></p>
     </footer>
 </body>
 </html>
