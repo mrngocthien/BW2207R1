@@ -4,38 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Hoạt Hình</title>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: black;
+        font-size: 14px;
+    }
+    body,p {
+        margin: 0;
+        padding: 0;
+    }
+    /* header */
+        header {
+            height: 50px;
+            background-color: lightgray;
+            position: fixed;
+            width: 100%;
+            top: 0px; 
+        }
+        #logo {
+            height: 100%;
+        }
+    /* Nav bar */
+        nav {
+            height: 30px;
+            background-color: rgb(188, 182, 182);  
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            top: 45px;
+            width: 100%;
+        } 
+        nav ul {
+            padding: 5px;
+        } 
+        nav ul li:hover {
+            background-color: rgb(242, 242, 62);
+            font-weight: bold;
+        }       
+        nav ul li {
+            padding: 5px;
+            display: inline;
+        }
+        nav li a{
+            text-decoration:none;
+        }
+    /* Left content */
+        aside {
+            width: 30%;
+            background-color: lightgray;
+            float: left;
+            margin-top: 45px;
+            margin-bottom: 10px;
+            margin-right: 1%;
+        }
+        aside div {
+            padding: 10px;
+        }
+        aside div img {
+            width: 100%;
+        
+        }
+    /* right content */
+        article {
+            width: 69%;
+            background-color: white;
+            float: left;
+            margin-top: 45px;
+            margin-bottom: 10px;
+        }
+        article #video_player,p {
+            width: 70%;
+        }
+    /* footer */
+        footer {
+            height: 50px;
+            background-color: rgb(231, 171, 171);
+            clear: both;   
+            text-align: center;
+            padding: 15px; 
+        }
+        footer p {
+            display: inline;
+              
+        }
+        
+</style>
 <body>
-      <form action="https://www.google.com.vn/">
-        <input type="text" name="q"/>
-        <input type="submit" value="Tìm kiếm"/>
-      </form>
-      <form action="/action_page.php">
-        First name:<br>
-        <input type="text" value="Mickey"><br>
-        Last name:<br>
-        <input type="text" name="lastname" value="Mouse"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-      <form action="/action_page.php">
-        <fieldset>
-          <legend>Personal information:</legend>
-          First name:<br>
-          <input type="text" name="firstname" value="Mickey"><br>
-          Last name:<br>
-          <input type="text" name="lastname" value="Mouse"><br><br>
-          <input type="submit" value="Submit">
-        </fieldset>
-      </form>
-      <form method="POST">
-        <input name="secret" value="abcg124faasfjh149dfd" type="hidden"/>
-        Account: <input name="account" value="admin" type="text"/><br/>
-        Sở thích:<br/>
-        <label><input name="hobby" value="travel" type="radio" checked/> Du lịch</label> <br/>
-        <label><input name="hobby" value="sport" type="radio"/> Thể thao</label> <br/>
-        <label><input name="hobby" value="cooking" type="radio"/> Nấu ăn</label> <br/>
-        <input type="submit" value="Send data"/>
-      </form>
+    <header>
+        <img id="logo" src="./css/css_layout/images/logo.jpg" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Phim hoạt hình</a></li>
+            <li>|</li>
+            <li><a href="#">Phim hoạt hình yêu thích</a></li>
+            <li>|</li>
+            <li><a href="#">Nhân vật hoạt hình</a></li>
+            <li>|</li>
+            <li><a href="#">Góp ý</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <div>
+            <img src="./css/css_layout/images/1.jpeg" alt="">
+            <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
+            <p>Chanel Fun</p> 
+        </div>
+        <div>
+          <img src="./css/css_layout/images/1.jpeg" alt="">
+          <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
+          <p>Chanel Fun</p> 
+        </div>
+        <div>
+          <img src="./css/css_layout/images/1.jpeg" alt="">
+          <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
+          <p>Chanel Fun</p> 
+        </div>
+        <div>
+          <img src="./css/css_layout/images/1.jpeg" alt="">
+          <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p>
+          <p>Chanel Fun</p> 
+        </div>
+    </aside>
+    <article>
+        <iframe width="600px" height="400px" id="video_player" src="https://www.youtube.com/embed/hSvkzXZPYQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><b>Welcome đến với khách sạn nobi</b>-5.320.000 lượt xem</p><br>
+        <p>Lời tựa :</p><br>
+        <p>Bộ phim kể lột tả văn hoá của đất nước mặt trời mọc (Nhật bản), xoay quanh 2 nhân vật chính là Mèo máy Doreamon và Nobita hậu đậu. Cùng các nhân vật khác tạo nên một chuỗi các cuộc phiêu lưu kì thú xuyên thời không. Đôi lúc chỉ đơn giản là những chuyện đời thường, nhưng có lúc xảy ra các biến cố sống còn dẫn đến các cuộc chiến đấu trước thế lực siêu nhiên để bảo vệ trái đất.  </p>
+    </article>
+    <footer>
+        <p><b>Coppyright 2022 - Thiết kế web bởi Ngọc Thiện</b></p>
+    </footer>
 </body>
 </html>
