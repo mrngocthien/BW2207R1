@@ -10,49 +10,54 @@
     * {
         box-sizing: border-box;
     }
-    #header {
+    .header {
         width: 100%;
         height: 100px;
         background-color: rgb(2, 2, 110);
         color: blue;
-        text-align: center;
-        position: fixed;
-        clear: both;
     }
-    #leftbar {
+    .leftbar {
         width: 25%;
         background-color: green;
         height: 700px;
         float: left;
-        padding: 10px;
     }
-    #rightbar {
+    .rightbar {
         width: 25%;
         background-color:rgb(73, 73, 239);
         height: 700px;
         float: left;
-        padding: 10px;
     }
-    #content {
+    .content {
         width: 50%;
         background-color: yellow;
         height: 700px;
         float: left;
-        padding: 20px;
     }
-    #footer {
-        height: 50px;
+    .footer {
+        height: 100px;
         background-color: rgb(2, 103, 110);
         color: orange;
-        text-align: center;
         clear: both;
+    }
+    @media screen and(max-width: 768px) {
+        .leftbar {width: 30%;}
+        .content { width: 70%;}
+        .rightbar {width: 100%; height: 100px;}
+    }
+    @media screen and(max-width: 576px) {
+        .leftbar, .content, .rightbar {
+            height: 200px;
+            width: 100%;
+        }
+        
     }
 </style>
 <body>
-    <div id="header"></div>
-    <div id="leftbar"></div>
-    <div id="content"></div>
-    <div id="rightbar"></div>
-    <div id="footer"></div>
+    <header class="header"></header>
+    <aside class="leftbar"></aside>
+    <article class="content"></article>
+    <aside class="rightbar"></aside>
+    <footer class="footer"></footer>
 </body>
 </html>
