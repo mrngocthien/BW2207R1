@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: grey;
+        padding-top: 15px;
+    }
+    header ul li {
+        list-style: none;
+        color: white;
+        padding: 5px;
+        display: inline;
+    }
+    header ul li:hover {
+        background-color: black;
+    }
+    .leftbar {
+        width: 20%;
+        height: 500px;
+        float: left;
+        background-color: lightblue;
+    }
+    .leftbar ul li {
+        list-style: none;
+        padding: 10px 90px 5px;
+    }
+    .rightbar {
+        width: 20%;
+        height: 500px;
+        float: left;
+        background-color: lightblue;
+        padding: 10px;
+        
+    }
+    .rightbar div {
+        background-color: antiquewhite;
+        border: 1px solid gray;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 10px;
+    }
+    article {
+        width: 60%;
+        height: 500px;
+        float: left;
+        padding: 10px;
+    }
+    article div {
+        display: block;
+    }
+    footer {
+        width: 100%;
+        height: 50px;
+        clear: both;
+        background-color: grey;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px){
+        .leftbar {
+            width: 50%;
+        }
+        article {
+            width: 50%;
+        }
+        .rightbar {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .leftbar {
+            width: 100%;
+        }
+        article {
+            width: 100%;
+        }
+        .rightbar {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+            <li><input type="button" value="LogIn"></li>
+        </ul>
+    </header>
+    <aside class="leftbar">
+        <ul>
+            <li><a class="link" href="http://">Link</a></li>
+            <li><a class="link" href="http://">Link</a></li>
+            <li><a class="link" href="http://">Link</a></li>
+            <li><a class="link" href="http://">Link</a></li>
+        </ul>     
+    </aside>
+    <article>
+        <div>
+            <h1>WELCOME</h1><br>
+            <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+            <br>
+            <hr>
+            <br>
+            <h3>Test</h3><br>
+            <p>Lorem ipsum</p>
+        </div>
+    </article>
+    <aside class="rightbar">
+        <div>ADS</div>
+        <div>ADS</div>
+    </aside>
+    <footer class="footer">Footer text</footer>
+</body>
+</html>
