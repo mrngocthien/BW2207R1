@@ -19,6 +19,11 @@
     top: 4%;
     left: 10%;
 }
+
+.miniBanner:hover {
+    width: 200px;
+    transition: 0.5s;
+}
 .banner-text {
     text-align: center;
     color: white;
@@ -26,16 +31,30 @@
 }
 .banner-text h1 {
     font-size: 130px;
+    animation-name: changeColor ;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 
+}
+@keyframes changeColor {
+    0% {
+        color: white;
+    }
+    50% {
+        color: rgb(203, 203, 7);
+    }
+    100% {
+        color: rgb(203, 118, 7);
+    }
 }
 .banner-text p {
     font-size: 20px;
     font-style: italic;
 }
-.banner-text p:hover {
-    font-size: 30px;
-    transition: 0.1s;
-}
+
 .banner-button {
     margin: 70px auto 0;
     
@@ -170,7 +189,25 @@ nav ul li a:hover {
 .features-img img {
     width: 70%;
     border-radius: 10px;
-    opacity: 0.7;
+    animation-name: changeOpacity ;
+    animation-duration: 3.0s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes changeOpacity {
+    0% {
+        opacity: 0.9;
+        border-radius: 10%;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.3;
+        border-radius: 50%;
+    }
 }
 .features h1 {
     text-align: left;
@@ -300,7 +337,7 @@ hr {
 .user-info .bi {
     margin-left: 10px;
     font-size: 20px;
-    color: green;
+    color: rgb(0, 166, 255);
 }
 .user-info small {
     color: green;
@@ -371,8 +408,17 @@ hr {
     cursor: pointer;
     transition: 0.3s;
 }
-.social-links .bi:hover {
-    color: orange;
+.social-links #facebook:hover {
+    color: rgb(0, 166, 255);
+}
+.social-links #instagram:hover {
+    color: rgb(232, 55, 11);
+}
+.social-links #twitter:hover {
+    color: rgb(0, 166, 255);
+}
+.social-links #youtube:hover {
+    color: rgb(255, 34, 0);
 }
 .social-links p {
     font-size: 12px;
