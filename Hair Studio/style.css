@@ -354,6 +354,10 @@ hr {
     top: 60%;
     transform: translate(-50%, -50%);
 }
+.footer-img:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
 .social-links {
     text-align: center;
 }
