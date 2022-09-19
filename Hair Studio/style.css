@@ -30,7 +30,7 @@
     padding-top: 180px;
 }
 .banner-text h1 {
-    font-size: 130px;
+    font-size: 120px;
     animation-name: changeColor ;
     animation-duration: 2.0s;
     animation-timing-function: ease-in;
@@ -424,5 +424,16 @@ hr {
     font-size: 12px;
     margin-top: 15px;
 }
-
 /* end footer */
+
+/* responsive using flexbox */
+@media screen and (max-width: 700px) {
+    .banner-text, .feature-box, .service-box {
+        flex-direction: column;
+    }
+
+    .banner-text h1 {
+        font-size: 100px;
+    }
+}
+/* responsive using flexbox */
