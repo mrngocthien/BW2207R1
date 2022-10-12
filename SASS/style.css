@@ -1,0 +1,22 @@
+div {
+  background-color: green;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 80%;
+}
+div > h1, div p {
+  color: orange;
+}
+div button {
+  background-color: orange;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 80%;
+}
+div button:hover {
+  background-color: wheat;
+}/*# sourceMappingURL=style.css.map */

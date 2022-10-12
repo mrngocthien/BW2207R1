@@ -1,0 +1,40 @@
+#container {
+  max-width: 800px;
+  margin: auto;
+  font-family: "Gotu", sans-serif;
+  font-size: 16px;
+}
+#container nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+#container nav ul li {
+  border: 1px solid #b6001b;
+  background-color: lightpink;
+  width: 100%;
+  text-align: center;
+  margin-left: -1px;
+  transition: 1s;
+}
+#container nav ul li a {
+  color: #b6001b;
+  text-decoration: none;
+}
+#container nav ul li:hover {
+  background-color: #b6001b;
+  cursor: pointer;
+}
+#container nav ul li:hover a {
+  font-weight: bold;
+  color: lightpink;
+}
+#container h1 {
+  color: #b6001b;
+}
+
+@media screen and (max-width: 649px) {
+  #container nav ul {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */

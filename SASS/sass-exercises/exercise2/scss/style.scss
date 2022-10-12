@@ -1,0 +1,27 @@
+$small: 576px;
+$medium: 768px;
+$color: darkred;
+$size: 14px;
+
+@mixin layout {
+    background-color: lightness($color);
+    color: $color;
+    font-size: $size;
+    margin: $size;
+    padding: $size;
+    line-height: 1.5;
+    border: 5px solid $color;
+}
+#container {
+    @include layout()
+}
+@media screen and (max-width: $small) {
+    layout {
+        color: darkblue;
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: $medium) {
+    $color: darkgreen;
+}

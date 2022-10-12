@@ -1,0 +1,150 @@
+///general layout
+$background-color: black;
+$button-background-color: green;
+$button-hover-background: orange;
+$main-text-color: white;
+$secondary-text-color: wheat;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+//button layout
+@mixin btn-layout {
+    color: $secondary-text-color;
+    background-color: $button-background-color;
+    font-weight: bold;
+    margin: auto;
+}
+//button hover layout
+@mixin btn-hover {
+    color: $background-color;
+    background-color: $button-hover-background;
+}
+//img-scale
+@mixin img-scale {
+    img {
+        transform: scale(1);
+        transition: 0.3s;
+        max-width: 100%;
+    }
+    img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+// text-animation setup
+@mixin text-animation {
+    animation-name: changeColor ;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    //text-color life circle
+    @keyframes changeColor {
+        0% {
+            color: white;
+        }
+        50% {
+            color: wheat;
+        }
+        100% {
+            color: orange;
+        }
+    }
+}
+// images-animation setup
+@mixin img-animation {
+    animation-name: changeOpacity;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    //opacity life circle
+    @keyframes changeOpacity {
+        0% {
+            opacity: 0.4;
+        }
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+main {
+    background-color: $background-color;
+    @media screen and (max-width: 1400px) {
+        .container {
+            width: 100%;
+        } 
+    }
+    .banner {
+        background: none;
+        .row {
+            .col-md-5 {
+                padding-top: 80px;
+                text-align: center;
+            }
+            .col-md-7 {
+                padding-top: 10px;
+                text-align: center;
+            }
+            img {
+                width: 90%;
+                margin: auto;
+            }
+            p {
+                color: $main-text-color;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+    .section-1 {
+        padding-top: 20px;
+        .table {
+            max-width: 90%;
+            margin: auto;
+            .bi {
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                @include text-animation();
+            }
+            .btn {
+                @include btn-layout();
+            }
+            .btn:hover {
+                @include btn-hover();
+            }
+        }
+        .card {
+            max-width: 100%;
+            margin: auto;
+            border: none;
+            img {
+                @include img-animation();
+            }
+        }
+        .row {
+            max-width: 90%;
+            padding: 30px 0 30px 0;
+            margin: auto;
+            p {
+                font-size: 10px;
+                color: $main-text-color;
+                padding-left: 10px;
+            }
+        }
+        
+    }
+
+}
+

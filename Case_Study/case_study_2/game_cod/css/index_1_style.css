@@ -1,0 +1,513 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  background: black;
+}
+main .banner .row {
+  padding-top: 90px;
+}
+main .banner .row .left-content img {
+  max-width: 80%;
+  margin: auto;
+}
+main .banner .row .card {
+  text-align: center;
+  background: none;
+  color: white;
+  border-radius: 0;
+  border: none;
+}
+main .banner .row .btn {
+  color: wheat;
+  background-color: green;
+  font-weight: bold;
+  margin: auto;
+}
+main .banner .row .btn:hover {
+  color: black;
+  background-color: orange;
+}
+main .banner .row .right-content img {
+  -webkit-animation-name: changeOpacity;
+          animation-name: changeOpacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes changeOpacity {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes changeOpacity {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .section-1 {
+  color: white;
+  padding-top: 20px;
+}
+main .section-1 img {
+  transform: scale(1);
+  transition: 0.3s;
+  max-width: 100%;
+}
+main .section-1 img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .section-1 h1 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-animation-name: changeColor;
+          animation-name: changeColor;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: wheat;
+  }
+  100% {
+    color: orange;
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: wheat;
+  }
+  100% {
+    color: orange;
+  }
+}
+main .section-1 h3 {
+  font-size: 30px;
+  text-align: center;
+}
+main .section-1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+main .section-1 p {
+  font-size: 20px;
+}
+main .section-1 .row {
+  padding-top: 30px;
+}
+main .section-1 img {
+  border-radius: 5px;
+  max-width: 95%;
+  padding-left: 20px;
+  -webkit-animation-name: changeOpacity;
+          animation-name: changeOpacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@keyframes changeOpacity {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .section-1 .col-md-12 {
+  width: 85%;
+  margin: auto;
+}
+main .section-1 .col-md-12 p {
+  font-size: 30px;
+}
+main .section-2 {
+  /* medium and up screens */
+}
+main .section-2 h1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  padding-top: 40px;
+  -webkit-animation-name: changeColor;
+          animation-name: changeColor;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: wheat;
+  }
+  100% {
+    color: orange;
+  }
+}
+main .section-2 .card {
+  margin-left: 5px;
+}
+main .section-2 .card-img-overlay p {
+  max-width: 250px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: start;
+}
+@media (max-width: 767px) {
+  main .section-2 .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  main .section-2 .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+main .section-2 .carousel-inner .carousel-item.active,
+main .section-2 .carousel-inner .carousel-item-next,
+main .section-2 .carousel-inner .carousel-item-prev {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  main .section-2 .carousel-inner .carousel-item-end.active,
+main .section-2 .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  main .section-2 .carousel-inner .carousel-item-start.active,
+main .section-2 .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+main .section-2 .carousel-inner .carousel-item-end,
+main .section-2 .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+main .section-3 {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+main .section-3 img {
+  transform: scale(1);
+  transition: 0.3s;
+  max-width: 100%;
+}
+main .section-3 img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .section-3 img {
+  max-width: 100%;
+}
+main .section-3 h1 {
+  padding-bottom: 20px;
+}
+main .section-4 {
+  text-align: center;
+  padding-top: 30px;
+}
+main .section-4 h1 {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  border: 2px solid wheat;
+  background-color: gray;
+  width: 96%;
+  margin: auto;
+}
+main .section-4 .row {
+  width: 98%;
+  margin: auto;
+}
+main .section-4 .row p {
+  width: 60%;
+  text-align: left;
+  font-size: 38px;
+  color: wheat;
+  font-weight: bolder;
+}
+main .section-4 .row .card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+}
+main .section-4 .row img {
+  width: 100%;
+}
+main .section-4 .btn {
+  color: wheat;
+  background-color: green;
+  font-weight: bold;
+  margin: auto;
+}
+main .section-4 .btn:hover {
+  color: black;
+  background-color: orange;
+}
+main .section-5 {
+  padding-top: 90px;
+  text-align: center;
+  color: white;
+  -webkit-animation-name: changeOpacity;
+          animation-name: changeOpacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+main .section-5 img {
+  transform: scale(1);
+  transition: 0.3s;
+  max-width: 100%;
+}
+main .section-5 img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@keyframes changeOpacity {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .section-5 h1 {
+  font-size: 60px;
+  color: wheat;
+  -webkit-animation-name: changeColor;
+          animation-name: changeColor;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: wheat;
+  }
+  100% {
+    color: orange;
+  }
+}
+main .section-5 .row {
+  max-width: 90%;
+  margin: auto;
+}
+main .section-5 .row .card {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+main .section-5 .row .card img {
+  padding: 30px;
+}
+main .section-5 .row .card .card-body p {
+  font-size: 20px;
+}
+main .section-6 .platform .row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main .section-6 .platform img {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+main .section-6 .platform .col-md-5 img {
+  padding-top: 40px;
+}
+main .section-6 .platform .col-md-7 p {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+main .section-6 .platform #slider {
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section-6 .platform .container {
+  max-width: 1400px;
+  margin: auto;
+}
+@media screen and (max-width: 1600px) {
+  main .section-6 .platform .container {
+    width: 100%;
+  }
+}
+main .section-6 .platform .sub_container {
+  width: 85%;
+  margin: auto;
+}
+main .section-6 .platform .controller {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+main .section-6 .platform #controls i {
+  color: black;
+  font-size: 1rem;
+}
+main .section-6 .platform #controls .previous, main .section-6 .platform .next {
+  padding: 2px;
+  width: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  background-color: greenyellow;
+  box-shadow: 0 0 5px rgb(21, 21, 21);
+}
+main .section-6 .platform #controls .previous:hover, main .section-6 .platform .next:hover {
+  background-color: orange;
+  border: 2px solid wheat;
+}
+main .section-6 .platform .slide-img {
+  width: 100%;
+  height: 230px;
+  border: 1px solid wheat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  -webkit-animation-name: changeOpacity;
+          animation-name: changeOpacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@keyframes changeOpacity {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .section-6 .platform .slide-img:hover {
+  box-shadow: 0 0 0 300px rgba(5, 119, 4, 0.9) inset;
+}
+main .section-6 .platform .slide-img a {
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0;
+}
+main .section-6 .platform .slide-img:hover a {
+  opacity: 1;
+  transform: scale(1);
+}
+main .section-6 .platform .img-1 {
+  background-image: url("../assets/order/ps.png");
+}
+main .section-6 .platform .img-2 {
+  background-image: url("../assets/order/xbox.png");
+}
+main .section-6 .platform .img-3 {
+  background-image: url("../assets/order/steam.png");
+}
+main .section-6 .platform .img-4 {
+  background-image: url("../assets/order/battle_net.png");
+}
+main .section-6 .platform .row {
+  padding-top: 20px;
+}
+main .section-6 .platform .col-md-12 p {
+  color: white;
+  font-size: 10px;
+  padding: 3px 150px 3px 150px;
+}/*# sourceMappingURL=index_1_style.css.map */

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* header */
+.nav-item {
+    padding: 0 8px 0 8px;
+}
+header h3 {
+    font-weight:lighter;
+}
+header .btn {
+    width: 130px;
+}
+/* section-1 */
+
+/* section-4 */
+#slider {
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158, 158, 186);
+}
+.container {
+    width: 1400px;
+    margin: auto;
+}
+.sub_container {
+    width: 85%;
+    margin: auto;
+}
+.controller {
+    display: flex;
+    justify-content: space-between;
+}
+#controls i {
+    color: black;
+    font-size: 1rem;
+}
+.previous, .next {
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    background-color: greenyellow;
+    box-shadow: 0 0 5px rgb(21, 21, 21);
+}
+.previous:hover, .next:hover {
+    background-color: orange;
+    border: 2px solid wheat;
+}
+.slide-img {
+    width: 100%;
+    height: 230px;
+    border: 1px solid wheat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.slide-img:hover {
+    box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.9) inset;
+}
+.slide-img a {
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+}
+.slide-img:hover a {
+    opacity: 1;
+    transform: scale(1);
+}
+.img-1 {
+    background-image: url("../assets/T01.png");
+}
+.img-2 {
+    background-image: url("../assets/T02.png");
+}
+.img-3 {
+    background-image: url("../assets/T03.png");
+}
+.img-4 {
+    background-image: url("../assets/T04.png");
+}
+.img-5 {
+    background-image: url("../assets/T05.png");
+}
+.img-6 {
+    background-image: url("../assets/T06.png");
+}
+@media screen and (max-width: 1600px) {
+    .container {
+        width: 100%;
+    } 
+}
+
+/* section-5 */

@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  background-color: black;
+  color: white;
+}
+main .banner {
+  padding-top: 100px;
+}
+main .banner h1 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .banner img {
+  max-width: 30%;
+  display: block;
+  margin: auto;
+  padding: 10px 0 40px 0;
+}
+main .slider {
+  max-width: 70%;
+}
+main .slider .carousel .carousel-inner {
+  max-width: 600px;
+  margin: auto;
+  padding: 5px;
+}
+main .slider .carousel .carousel-item {
+  text-align: center;
+}
+main .slider .carousel p {
+  font-size: medium;
+  padding-bottom: 30px;
+}
+main .form {
+  max-width: 350px;
+  margin: auto;
+}
+main .form h1 {
+  text-align: center;
+  font-size: 20px;
+}
+main .form .btn {
+  color: wheat;
+  background-color: green;
+  font-weight: bold;
+  margin: auto;
+  max-width: 93%;
+}
+main .form .btn:hover {
+  color: black;
+  background-color: orange;
+}/*# sourceMappingURL=sign_in_up_style.css.map */

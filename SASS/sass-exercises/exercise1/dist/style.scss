@@ -1,0 +1,47 @@
+$primary: lightpink;
+$primary-dark: darken($primary, 50%);
+$font-stack: 'Gotu', sans-serif;
+$font-size: 16px;
+#container {
+    max-width: 800px;
+    margin: auto;
+    font-family: $font-stack;
+    font-size: $font-size;
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        li {
+            border: 1px solid $primary-dark;
+            background-color: $primary;
+            width: 100%;
+            text-align: center;
+            margin-left: -1px;
+            transition: 1s;
+            a {
+                color: $primary-dark;
+                text-decoration: none;
+            }
+        }
+        li:hover {
+            background-color: $primary-dark;
+            cursor: pointer;
+            a {
+                font-weight: bold;
+                color: $primary;
+            }
+        }
+    }
+    h1 {
+        color: $primary-dark;
+    }
+}
+@media screen and (max-width:649px) {
+    #container {
+        nav {
+            ul {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

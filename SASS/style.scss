@@ -1,0 +1,24 @@
+$main-color: orange;
+$secondary-color: green;
+@mixin common-style {
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 80%
+}
+
+div {
+    background-color: $secondary-color;
+    @include common-style();
+    > h1, p {
+        color: $main-color;
+    }
+    button {
+        background-color: $main-color;
+        @include common-style();
+    }
+    button:hover {
+        background-color: wheat;
+    } 
+}

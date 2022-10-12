@@ -1,0 +1,16 @@
+#container {
+  background-color: 27.2549019608%;
+  color: darkred;
+  font-size: 14px;
+  margin: 14px;
+  padding: 14px;
+  line-height: 1.5;
+  border: 5px solid darkred;
+}
+
+@media screen and (max-width: 576px) {
+  layout {
+    color: darkblue;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
