@@ -112,6 +112,7 @@ main .section-1 h1 {
 main .section-1 h2 {
   color: white;
   text-align: center;
+  font-size: medium;
 }
 main .section-2 {
   background-color: black;

@@ -109,6 +109,12 @@ main {
     }
     .section-1 {
         padding-top: 20px;
+        .btn {
+            @include btn-layout();
+        }
+        .btn:hover {
+            @include btn-hover();
+        }
         .table {
             max-width: 90%;
             margin: auto;
@@ -117,18 +123,13 @@ main {
                 font-weight: bold;
                 cursor: pointer;
                 @include text-animation();
-            }
-            .btn {
-                @include btn-layout();
-            }
-            .btn:hover {
-                @include btn-hover();
-            }
+            }  
         }
         .card {
             max-width: 100%;
             margin: auto;
             border: none;
+            margin-top: 20px;
             img {
                 @include img-animation();
             }
@@ -143,7 +144,17 @@ main {
                 padding-left: 10px;
             }
         }
-        
+        .hidden-card {
+            display: none;
+        }
+        @media screen and (max-width: 576px) {
+            .hidden-card {
+                display: block;
+            }
+            .table {
+                display: none;
+            }
+        }
     }
 
 }

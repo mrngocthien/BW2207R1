@@ -37,6 +37,16 @@ main .banner .row p {
 main .section-1 {
   padding-top: 20px;
 }
+main .section-1 .btn {
+  color: wheat;
+  background-color: green;
+  font-weight: bold;
+  margin: auto;
+}
+main .section-1 .btn:hover {
+  color: black;
+  background-color: orange;
+}
 main .section-1 .table {
   max-width: 90%;
   margin: auto;
@@ -80,20 +90,11 @@ main .section-1 .table .bi {
     color: orange;
   }
 }
-main .section-1 .table .btn {
-  color: wheat;
-  background-color: green;
-  font-weight: bold;
-  margin: auto;
-}
-main .section-1 .table .btn:hover {
-  color: black;
-  background-color: orange;
-}
 main .section-1 .card {
   max-width: 100%;
   margin: auto;
   border: none;
+  margin-top: 20px;
 }
 main .section-1 .card img {
   -webkit-animation-name: changeOpacity;
@@ -140,4 +141,15 @@ main .section-1 .row p {
   font-size: 10px;
   color: white;
   padding-left: 10px;
+}
+main .section-1 .hidden-card {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  main .section-1 .hidden-card {
+    display: block;
+  }
+  main .section-1 .table {
+    display: none;
+  }
 }/*# sourceMappingURL=order_bundle.css.map */
