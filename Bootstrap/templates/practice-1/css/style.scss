@@ -11,12 +11,16 @@ $bluelight: rgb(0, 128, 255);
     --patua-font: "Patua+One", curvive;
     --Lobster-font: "Lobster", curvive;
 }
-
-header {
+body {
     background-color: $background;
+}
+header {
+    background: none;
+    max-width: 80%;
+    margin: auto;
     .navbar {
         padding: 0;
-        max-width: 95%;
+        max-width: 100%;
         .navbar a {
             color: black;
             font-family: var(--Sniglet-font);
@@ -49,11 +53,12 @@ header {
 }
 
 main {
-    background-color: $background;
+    background: none;
     .banner {
         padding-top: 50px;
+        max-width: 80%;
         .top-content {
-            max-width: 92%;
+            max-width: 100%;
             margin: auto;
             .card {
                 background: none;
@@ -69,9 +74,9 @@ main {
             }
         }
         .bottom-content {
-            max-width: 92%;
+            max-width: 100%;
             margin: auto;
-            .col-md-2 {
+            .col-md-3 {
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -91,5 +96,35 @@ main {
             font-size: 50px;
         }
         
+    }
+    .section-1 {
+        .row {
+            max-width: 80%;
+            .card {
+                padding: 5px;
+                border-radius: 10px;
+            }
+            .card img {
+                max-width: 98%;
+                border-radius: 10px;
+                margin: auto;
+            }
+            .card-text {
+                display: flex;
+                justify-content: space-between;
+                font-size: small;
+            }
+            .subdivision {
+                width: 120px;
+                background: $background;
+                border-radius: 5px;
+                padding: 5px;
+                text-align: center;
+            }
+            a {
+                background-color: $background;
+                border-radius: 50%;
+            }
+        }
     }
 }
