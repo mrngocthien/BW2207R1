@@ -27,6 +27,7 @@ main .banner .row .btn {
   background-color: green;
   font-weight: bold;
   margin: auto;
+  width: 200px;
 }
 main .banner .row .btn:hover {
   color: black;
@@ -296,6 +297,7 @@ main .section-4 .btn {
   background-color: green;
   font-weight: bold;
   margin: auto;
+  width: 250px;
 }
 main .section-4 .btn:hover {
   color: black;

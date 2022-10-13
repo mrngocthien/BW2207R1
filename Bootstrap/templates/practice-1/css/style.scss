@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet');
+* {
+    box-sizing: border-box;
+}
+
+$background: rgba(198, 245, 247, 0.5);
+$bluelight: rgb(0, 128, 255);
+:root {
+    --Sniglet-font: "Sniglet", curvive;
+    --Rubik-font: "Rubik", curvive;
+    --patua-font: "Patua+One", curvive;
+    --Lobster-font: "Lobster", curvive;
+}
+
+header {
+    background-color: $background;
+    .navbar {
+        padding: 0;
+        max-width: 95%;
+        .navbar a {
+            color: black;
+            font-family: var(--Sniglet-font);
+            font-size: 0.9em;
+        }
+        .navbar a:hover {
+            color: black;
+        }
+        .navbar-brand {
+            padding-left: 4rem;
+            .bi {
+                border-radius: 5px;
+                padding: 10px;
+                color: white;
+            }
+        }
+        .nav-item:last-child {
+            padding-right: 10rem;
+        }
+        .nav-item {
+            padding: 0.2rem;
+            .nav-link {
+                padding: 12px;
+            }
+        }
+        .btn {
+            width: 100px;
+        }
+    }  
+}
+
+main {
+    background-color: $background;
+    .banner {
+        padding-top: 50px;
+        .top-content {
+            max-width: 92%;
+            margin: auto;
+            .card {
+                background: none;
+                border: none;
+            }
+            .col-md-8 {
+                padding-left: 300px;
+            }
+            .card-title {
+                font-size: 18px;
+                background-color: white;
+                max-width: max-content;
+            }
+        }
+        .bottom-content {
+            max-width: 92%;
+            margin: auto;
+            .col-md-2 {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 50px;
+            }
+            img {
+                border-radius: 20px;
+                max-width: 100%;
+            }
+        }
+        h1 {
+            font-size: 60px;
+        }
+        h5 {
+            color: $bluelight;
+            font-size: 50px;
+        }
+        
+    }
+}

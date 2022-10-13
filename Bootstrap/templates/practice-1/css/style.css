@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", curvive;
+  --Rubik-font: "Rubik", curvive;
+  --patua-font: "Patua+One", curvive;
+  --Lobster-font: "Lobster", curvive;
+}
+
+header {
+  background-color: rgba(198, 245, 247, 0.5);
+}
+header .navbar {
+  padding: 0;
+  max-width: 95%;
+}
+header .navbar .navbar a {
+  color: black;
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+}
+header .navbar .navbar a:hover {
+  color: black;
+}
+header .navbar .navbar-brand {
+  padding-left: 4rem;
+}
+header .navbar .navbar-brand .bi {
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+header .navbar .nav-item:last-child {
+  padding-right: 10rem;
+}
+header .navbar .nav-item {
+  padding: 0.2rem;
+}
+header .navbar .nav-item .nav-link {
+  padding: 12px;
+}
+header .navbar .btn {
+  width: 100px;
+}
+
+main {
+  background-color: rgba(198, 245, 247, 0.5);
+}
+main .banner {
+  padding-top: 50px;
+}
+main .banner .top-content {
+  max-width: 92%;
+  margin: auto;
+}
+main .banner .top-content .card {
+  background: none;
+  border: none;
+}
+main .banner .top-content .col-md-8 {
+  padding-left: 300px;
+}
+main .banner .top-content .card-title {
+  font-size: 18px;
+  background-color: white;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+main .banner .bottom-content {
+  max-width: 92%;
+  margin: auto;
+}
+main .banner .bottom-content .col-md-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .banner .bottom-content img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+main .banner h1 {
+  font-size: 60px;
+}
+main .banner h5 {
+  color: rgb(0, 128, 255);
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

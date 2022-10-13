@@ -95,6 +95,7 @@ main {
             }
             .btn {
                 @include btn-layout();
+                width: 200px;
             }
             .btn:hover {
                 @include btn-hover()
@@ -243,6 +244,7 @@ main {
         }
         .btn {
             @include btn-layout();
+            width: 250px;
         }
         .btn:hover {
             @include btn-hover();
