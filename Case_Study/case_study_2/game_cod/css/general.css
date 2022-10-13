@@ -10,9 +10,6 @@ header {
   z-index: 6;
   width: 100%;
 }
-header .navbar .container-fluid {
-  padding-left: 10px;
-}
 header .navbar .container-fluid a, header .navbar .container-fluid i {
   color: wheat;
   text-decoration: none;

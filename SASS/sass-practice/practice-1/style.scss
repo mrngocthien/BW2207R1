@@ -1,0 +1,22 @@
+$background_color_1: #84c754;
+$background_color_2: #f1f1f1;
+
+* {
+    box-sizing:border-box;
+}
+body {
+    .gridwrapper {
+        overflow:auto;
+        position:relative;
+        height:250px;
+    }
+    .gridcontent {
+        width:8.33%;
+        margin:0;
+        border-right:1px solid grey;
+        height:100%;
+        float:left;
+        background-color:$background_color_1;
+        background-color:$background_color_2;
+    }
+}
