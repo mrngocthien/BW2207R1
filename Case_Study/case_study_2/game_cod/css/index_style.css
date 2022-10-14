@@ -15,6 +15,44 @@ main .banner .row .left-content img {
   max-width: 80%;
   margin: auto;
 }
+main .banner .row h1 {
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+  -webkit-animation-name: changeColor;
+          animation-name: changeColor;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: wheat;
+  }
+  100% {
+    color: orange;
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: wheat;
+  }
+  100% {
+    color: orange;
+  }
+}
 main .banner .row .card {
   text-align: center;
   background: none;
@@ -98,17 +136,6 @@ main .section-1 h1 {
           animation-iteration-count: infinite;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-}
-@-webkit-keyframes changeColor {
-  0% {
-    color: white;
-  }
-  50% {
-    color: wheat;
-  }
-  100% {
-    color: orange;
-  }
 }
 @keyframes changeColor {
   0% {
