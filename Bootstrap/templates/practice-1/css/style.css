@@ -10,18 +10,19 @@
   --Lobster-font: "Lobster", curvive;
 }
 
-body {
-  background-color: rgba(198, 245, 247, 0.5);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background: none;
-  max-width: 80%;
-  margin: auto;
+  background: rgb(206, 244, 246);
 }
 header .navbar {
   padding: 0;
-  max-width: 100%;
+  max-width: 80%;
+  margin: auto;
 }
 header .navbar .navbar a {
   color: black;
@@ -32,7 +33,7 @@ header .navbar .navbar a:hover {
   color: black;
 }
 header .navbar .navbar-brand {
-  padding-left: 4rem;
+  padding-left: 1rem;
 }
 header .navbar .navbar-brand .bi {
   border-radius: 5px;
@@ -53,11 +54,12 @@ header .navbar .btn {
 }
 
 main {
-  background: none;
+  background: rgb(206, 244, 246);
 }
 main .banner {
   padding-top: 50px;
   max-width: 80%;
+  margin: auto;
 }
 main .banner .top-content {
   max-width: 100%;
@@ -67,9 +69,6 @@ main .banner .top-content .card {
   background: none;
   border: none;
 }
-main .banner .top-content .col-md-8 {
-  padding-left: 300px;
-}
 main .banner .top-content .card-title {
   font-size: 18px;
   background-color: white;
@@ -77,11 +76,14 @@ main .banner .top-content .card-title {
   max-width: -moz-max-content;
   max-width: max-content;
 }
+main .banner .top-content .card-body {
+  padding-left: 80px;
+}
 main .banner .bottom-content {
   max-width: 100%;
   margin: auto;
 }
-main .banner .bottom-content .col-md-3 {
+main .banner .bottom-content .col-md-2 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -99,15 +101,20 @@ main .banner h5 {
   color: rgb(0, 128, 255);
   font-size: 50px;
 }
-main .section-1 .row {
+main .section-1 {
   max-width: 80%;
+  margin: auto;
+  padding-top: 70px;
 }
 main .section-1 .row .card {
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
 }
+main .section-1 .row .card-body {
+  background: none;
+}
 main .section-1 .row .card img {
-  max-width: 98%;
+  max-width: 100%;
   border-radius: 10px;
   margin: auto;
 }
@@ -118,12 +125,12 @@ main .section-1 .row .card-text {
 }
 main .section-1 .row .subdivision {
   width: 120px;
-  background: rgba(198, 245, 247, 0.5);
-  border-radius: 5px;
+  background: rgb(206, 244, 246);
+  border-radius: 10px;
   padding: 5px;
   text-align: center;
 }
 main .section-1 .row a {
-  background-color: rgba(198, 245, 247, 0.5);
+  background-color: rgb(206, 244, 246);
   border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

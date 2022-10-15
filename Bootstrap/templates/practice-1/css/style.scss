@@ -3,24 +3,26 @@
     box-sizing: border-box;
 }
 
-$background: rgba(198, 245, 247, 0.5);
+$background: rgb(206, 244, 246);
 $bluelight: rgb(0, 128, 255);
+
 :root {
     --Sniglet-font: "Sniglet", curvive;
     --Rubik-font: "Rubik", curvive;
     --patua-font: "Patua+One", curvive;
     --Lobster-font: "Lobster", curvive;
 }
-body {
-    background-color: $background;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 header {
-    background: none;
-    max-width: 80%;
-    margin: auto;
+    background: $background;
     .navbar {
         padding: 0;
-        max-width: 100%;
+        max-width: 80%;
+        margin: auto;
         .navbar a {
             color: black;
             font-family: var(--Sniglet-font);
@@ -30,7 +32,7 @@ header {
             color: black;
         }
         .navbar-brand {
-            padding-left: 4rem;
+            padding-left: 1rem;
             .bi {
                 border-radius: 5px;
                 padding: 10px;
@@ -53,10 +55,11 @@ header {
 }
 
 main {
-    background: none;
+    background: $background;
     .banner {
         padding-top: 50px;
         max-width: 80%;
+        margin: auto;
         .top-content {
             max-width: 100%;
             margin: auto;
@@ -64,19 +67,19 @@ main {
                 background: none;
                 border: none;
             }
-            .col-md-8 {
-                padding-left: 300px;
-            }
             .card-title {
                 font-size: 18px;
                 background-color: white;
                 max-width: max-content;
             }
+            .card-body {
+                padding-left: 80px;
+            }
         }
         .bottom-content {
             max-width: 100%;
             margin: auto;
-            .col-md-3 {
+            .col-md-2 {
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -98,14 +101,19 @@ main {
         
     }
     .section-1 {
+        max-width: 80%;
+        margin: auto;
+        padding-top: 70px;
         .row {
-            max-width: 80%;
             .card {
-                padding: 5px;
+                padding: 10px;
                 border-radius: 10px;
             }
+            .card-body {
+                background: none;
+            }
             .card img {
-                max-width: 98%;
+                max-width: 100%;
                 border-radius: 10px;
                 margin: auto;
             }
@@ -117,7 +125,7 @@ main {
             .subdivision {
                 width: 120px;
                 background: $background;
-                border-radius: 5px;
+                border-radius: 10px;
                 padding: 5px;
                 text-align: center;
             }
