@@ -1,3 +1,4 @@
+//function for choose tiny carousel
 let slider = tns({
     container: ".my-slider",
     "slideby": 1,
@@ -25,6 +26,7 @@ let slider = tns({
     }
 })
 
+//function for boostrap carousel
 let items = document.querySelectorAll('.carousel .carousel-item')
 
 items.forEach((el) => {
