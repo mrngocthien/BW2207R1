@@ -129,9 +129,52 @@ main {
                 padding: 5px;
                 text-align: center;
             }
-            a {
+            .btn .bi {
+                font-size: 35px;
                 background-color: $background;
                 border-radius: 50%;
+            }
+            .btn .bi:hover {
+                background-color: $bluelight;
+                color: white;
+            }
+        }
+    }
+    .section-2 {
+        max-width: 80%;
+        margin: auto;
+        padding-top: 70px;
+        .statistical {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            text-align: center;
+            padding-top: 60px;
+            h1 {
+                color: $bluelight;
+            }
+        }
+        .left_content {
+            padding-bottom: 10px;
+        }
+        .title {
+            display: inline-flex;
+            width: 180px;
+            height: 55px;
+            .bi {
+                width: 90px;
+                color: white;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+            h6 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

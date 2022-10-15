@@ -130,7 +130,50 @@ main .section-1 .row .subdivision {
   padding: 5px;
   text-align: center;
 }
-main .section-1 .row a {
+main .section-1 .row .btn .bi {
+  font-size: 35px;
   background-color: rgb(206, 244, 246);
   border-radius: 50%;
+}
+main .section-1 .row .btn .bi:hover {
+  background-color: rgb(0, 128, 255);
+  color: white;
+}
+main .section-2 {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 70px;
+}
+main .section-2 .statistical {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 60px;
+}
+main .section-2 .statistical h1 {
+  color: rgb(0, 128, 255);
+}
+main .section-2 .left_content {
+  padding-bottom: 10px;
+}
+main .section-2 .title {
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+}
+main .section-2 .title .bi {
+  width: 90px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 25px;
+}
+main .section-2 .title h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
