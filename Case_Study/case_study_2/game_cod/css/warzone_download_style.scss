@@ -1,4 +1,4 @@
-///general layout
+///general layout///
 $background-color: black;
 $button-background-color: green;
 $button-hover-background: orange;
@@ -18,12 +18,12 @@ $secondary-text-color: wheat;
     font-weight: bold;
     margin: auto;
 }
-//button hover layout
 @mixin btn-hover {
     color: $background-color;
     background-color: $button-hover-background;
 }
-//img-scale
+
+//img-scale setup
 @mixin img-scale {
     img {
         transform: scale(1);
@@ -78,16 +78,15 @@ $secondary-text-color: wheat;
     }
 }
 
-/* Config */
+//* awesome mixin config *//
 $color-bg: #111;
 $color-particle: rgb(245, 89, 11);
-$spacing: 2560px;
+$spacing: 1560px;
 $time-1: 60s;
 $time-2: 120s;
 $time-3: 180s;
 $time-4: 600s;
 
-/* Pauls awesome mixin */
 @function particles($max) {
    $val: 0px 0px $color-particle;
    @for $i from 1 through $max {
@@ -100,9 +99,10 @@ $time-4: 600s;
 @mixin particles($max) {
    box-shadow: particles($max);
 }
+//* end awesome mixin config *//
 
 main {
-    //** backround-animation **//
+    //** awesome backround-animation **//
     .animation-wrapper {
     position: absolute;
     top: 0;
@@ -139,12 +139,14 @@ main {
     @include particles(200);
     height: 2px;
     width: 2px;
+    border-radius: 50%;
     }
 
     .particle-2:after {
     @include particles(200);
     height: 2px;
     width: 2px;
+    border-radius: 50%;
     }
 
     .particle-3 {
@@ -152,6 +154,7 @@ main {
     @include particles(100);
     height: 3px;
     width: 3px;
+    border-radius: 50%;
     }
 
     .particle-3:after {
@@ -176,18 +179,35 @@ main {
 
     @keyframes animParticle {
     from { transform: translateY(0px); }
-    to   { transform: translateY($spacing * -1); }
+    to   { transform: translateX($spacing); }
     }
-    //** end backround-animation **//
+    //** end awesome backround-animation **//
 
     
     .banner {
-        background: url("../assets/warzone_page/banner/war-zone-download.jpg");
+        background: linear-gradient(rgba(243, 240, 240, 0.053), rgba(0, 0, 0, 0.903)), url("../assets/warzone_page/banner/war-zone-download.jpg");
         background-size: cover;
         .card {
-            max-width: 40%;
+            max-width: 100%;
             background: none;
             padding-top: 80px;
+            img {
+                max-width: 80%;
+                margin: auto;
+            }
+            p {
+                color: $main-text-color;
+                text-align: center;
+                max-width: 90%;
+                margin: auto
+            }
+            .btn {
+                @include btn-layout();
+                width: 250px;
+            }
+            .btn:hover {
+                @include btn-hover();
+            }
             .card-body {
                 display: flex;
                 flex-direction: column;
@@ -196,23 +216,7 @@ main {
 
             }
         }
-        img {
-            max-width: 30%;
-            margin: auto;
-        }
-        p {
-            color: $main-text-color;
-            text-align: center;
-            max-width: 50%;
-            margin: auto
-        }
-        .btn {
-            @include btn-layout();
-            width: 250px;
-        }
-        .btn:hover {
-            @include btn-hover();
-        }
+        
         
     }
     .section-1 {

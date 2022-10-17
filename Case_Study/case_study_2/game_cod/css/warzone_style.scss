@@ -18,12 +18,11 @@ $secondary-text-color: wheat;
     font-weight: bold;
     margin: auto;
 }
-//button hover layout
 @mixin btn-hover {
     color: $background-color;
     background-color: $button-hover-background;
 }
-//img-scale
+//img-scale setup
 @mixin img-scale {
     img {
         transform: scale(1);
@@ -35,7 +34,7 @@ $secondary-text-color: wheat;
         cursor: pointer;
     }
 }
-// text-animation setup
+//text-animation setup
 @mixin text-animation {
     animation-name: changeColor ;
     animation-duration: 2.0s;
@@ -56,7 +55,7 @@ $secondary-text-color: wheat;
         }
     }
 }
-// images-animation setup
+//images-animation setup
 @mixin img-animation {
     animation-name: changeOpacity;
     animation-duration: 2.0s;
@@ -78,7 +77,7 @@ $secondary-text-color: wheat;
     }
 }
 
-/* Config */
+//* awesome mixin config *//
 $color-bg: #111;
 $color-particle: rgb(245, 89, 11);
 $spacing: 2560px;
@@ -87,7 +86,6 @@ $time-2: 120s;
 $time-3: 180s;
 $time-4: 600s;
 
-/* Pauls awesome mixin */
 @function particles($max) {
    $val: 0px 0px $color-particle;
    @for $i from 1 through $max {
@@ -100,9 +98,10 @@ $time-4: 600s;
 @mixin particles($max) {
    box-shadow: particles($max);
 }
+//* end awesome mixin config *//
 
 main {
-    //** backround-animation **//
+    //**awesome backround-animation**//
     .animation-wrapper {
     position: absolute;
     top: 0;
@@ -179,7 +178,7 @@ main {
     from { transform: translateY(0px); }
     to   { transform: translateY($spacing * -1); }
     }
-    //** end backround-animation **//
+    //** end awesome backround-animation**//
 
     
     .banner {
@@ -215,7 +214,7 @@ main {
             color: $main-text-color;
             text-align: center;
             padding-top: 40px;
-            // amination set :
+            // amination set
             @include text-animation();
         }
         h2 {
@@ -230,6 +229,7 @@ main {
             text-align: center;
             color: $main-text-color;
             padding-top: 20px;
+            // amination set
             @include text-animation();
         }
         h2 {
@@ -244,6 +244,7 @@ main {
                 box-shadow: 5px 5px 10px 5px rgb(136, 134, 134);
             }
             img {
+                // amination set :
                 @include img-animation();
             }
         }
@@ -288,6 +289,7 @@ main {
             color: $main-text-color;
             text-align: center;
             padding: 40px 0 20px 0;
+            // amination set :
             @include text-animation();
         }
     }
@@ -299,6 +301,7 @@ main {
             }
             img {
                 max-width: 100%;
+                // amination set :
                 @include img-animation();
             }
             .card {

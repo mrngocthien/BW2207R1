@@ -1,4 +1,4 @@
-///general layout
+///general layout///
 $background-color: black;
 $button-background-color: green;
 $button-hover-background: orange;
@@ -18,12 +18,11 @@ $secondary-text-color: wheat;
     font-weight: bold;
     margin: auto;
 }
-//button hover layout
 @mixin btn-hover {
     color: $background-color;
     background-color: $button-hover-background;
 }
-//img-scale
+//img-scale setup
 @mixin img-scale {
     img {
         transform: scale(1);
@@ -180,7 +179,7 @@ main {
 
     @keyframes animParticle {
     from { transform: translateY(0px); }
-    to   { transform: translateY($spacing * -1); }
+    to   { transform: translateY($spacing); }
     }
     //** end backround-animation **//
     
@@ -341,7 +340,7 @@ main {
             justify-content: center;
         }
         
-        /* medium and up screens */
+        /* make responsive */
         @media (min-width: 768px) {
             
             .carousel-inner .carousel-item-end.active,
@@ -366,6 +365,7 @@ main {
         text-align: center;
         color: $main-text-color;
         background-color: $background-color;
+        /*set animation*/
         @include img-scale();
         img {
             max-width: 100%;
@@ -485,6 +485,8 @@ main {
                 max-width: 1400px;
                 margin: auto;
             }
+
+            /*make responsive*/
             @media screen and (max-width: 1600px) {
                 .container {
                     width: 100%;
@@ -529,6 +531,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 transition: 0.5s;
+                /*set animation*/
                 @include img-animation();
             }
             .slide-img:hover {

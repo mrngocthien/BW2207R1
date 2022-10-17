@@ -19,12 +19,11 @@ $secondary-text-color: wheat;
     font-weight: bold;
     margin: auto;
 }
-//button hover layout
 @mixin btn-hover {
     color: $background-color;
     background-color: $button-hover-background;
 }
-//img-scale
+//img-scale setup
 @mixin img-scale {
     img {
         transform: scale(1);
@@ -38,7 +37,7 @@ $secondary-text-color: wheat;
         opacity: 1;
     }
 }
-// text-animation setup
+//text-animation setup
 @mixin text-animation {
     animation-name: changeColor ;
     animation-duration: 2.0s;
@@ -59,7 +58,7 @@ $secondary-text-color: wheat;
         }
     }
 }
-// images-animation setup
+//images-animation setup
 @mixin img-animation {
     animation-name: changeOpacity;
     animation-duration: 2.0s;
@@ -80,6 +79,7 @@ $secondary-text-color: wheat;
         }
     }
 }
+
 main {
     background-color: $background-color;
     .banner {
@@ -126,6 +126,7 @@ main {
             color: $main-text-color;
             text-align: center;
         }
+        //set animation
         @include img-scale();
     }
     .section-2 {
@@ -155,6 +156,7 @@ main {
                 max-width: 1400px;
                 margin: auto;
             }
+            //make responsive
             @media screen and (max-width: 1600px) {
                 .container {
                     width: 100%;

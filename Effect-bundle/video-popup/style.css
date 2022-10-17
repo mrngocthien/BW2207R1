@@ -1,89 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-.btn {
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-}
-.btn .play {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    background: red;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 25px rgb(133, 69, 69);
-    transition: 0.5s;
-}
-.btn.active .play {
-    box-shadow: 0 0 0 150vh darkgrey;
-}
-.btn .play::before {
-    content: '';
-    position: absolute;
-    border: 25px solid white;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 0px solid transparent;
-    transform: translateX(5px);
-}
-.btn p {
-    font-size: 1em;
-    font-weight: 500;
-    color: gray;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-.clip {
+#fade {
+    display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-.clip.active {
-    transform: translate(-50%, -50%) scale(1);
-}
-.clip iframe {
-    outline: none;
-    border: 2px solid black;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-}
-.clip .close {
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+  }
+  
+  #light {
+    display: none;
     position: absolute;
-    top: 70px;
-    right: 270px;
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    max-height: 360px;
+    margin-left: -300px;
+    margin-top: -180px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    z-index: 1002;
+    overflow: visible;
+  }
+  
+  #boxclose {
+    float: right;
     cursor: pointer;
-    
-}
-/* make responsive */
-@media screen and (max-width: 577px) {
-    .clip iframe {
-        width: 280px;
-        height: 158px;
-    }
-}
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 3px;
+    background: #222222;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 1002;
+    opacity: 0.9;
+  }
+  
+  .boxclose:before {
+    content: "x";
+  }
+  
+  #fade:hover ~ #boxclose {
+    display:none;
+  }
+  
+  .test:hover ~ .test2 {
+    display: none;
+  }

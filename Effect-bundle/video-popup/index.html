@@ -7,16 +7,23 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>video popup</title>
 </head>
 <body>
-    <div class="btn">
-        <div class="play"></div>
-        <p>Play Video</p>
+    <h1>CSS/Javascript popup with Lightbox effect</h1>
+
+    <div id="light">
+    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+    <video id="VisaChipCardVideo" width="600" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <!--Browser does not support <video> tag -->
+        </video>
     </div>
-    <div class="clip">
-        <iframe width="840" height="473" src="https://www.youtube.com/embed/BkCdEvKUAKA?autoplay=1" allow="autoplay"></iframe>
-        <b class="close">X</b>
+
+    <div id="fade" onClick="lightbox_close();"></div>
+
+    <div>
+    <a href="#" onclick="lightbox_open();">Watch video</a>
     </div>
       <script src="./script.js"></script>
 </body>

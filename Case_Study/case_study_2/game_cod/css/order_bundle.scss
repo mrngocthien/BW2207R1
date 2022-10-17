@@ -18,12 +18,11 @@ $secondary-text-color: wheat;
     font-weight: bold;
     margin: auto;
 }
-//button hover layout
 @mixin btn-hover {
     color: $background-color;
     background-color: $button-hover-background;
 }
-//img-scale
+//img-scale setup
 @mixin img-scale {
     img {
         transform: scale(1);
@@ -79,6 +78,7 @@ $secondary-text-color: wheat;
 }
 main {
     background-color: $background-color;
+    /*make responsive*/
     @media screen and (max-width: 1400px) {
         .container {
             width: 100%;
@@ -122,6 +122,7 @@ main {
                 font-size: 40px;
                 font-weight: bold;
                 cursor: pointer;
+                //set animation
                 @include text-animation();
             }
             td {
@@ -134,6 +135,7 @@ main {
             border: none;
             margin-top: 20px;
             img {
+                //set animation
                 @include img-animation();
             }
         }
@@ -150,6 +152,7 @@ main {
         .hidden-card {
             display: none;
         }
+        //make reponsive
         @media screen and (max-width: 576px) {
             .hidden-card {
                 display: block;
