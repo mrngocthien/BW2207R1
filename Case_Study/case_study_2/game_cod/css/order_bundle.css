@@ -90,6 +90,9 @@ main .section-1 .table .bi {
     color: orange;
   }
 }
+main .section-1 .table td {
+  cursor: pointer;
+}
 main .section-1 .card {
   max-width: 100%;
   margin: auto;

@@ -57,10 +57,12 @@ main .section-1 img {
   transform: scale(1);
   transition: 0.3s;
   max-width: 100%;
+  cursor: pointer;
+  opacity: 0.8;
 }
 main .section-1 img:hover {
   transform: scale(1.2);
-  cursor: pointer;
+  opacity: 1;
 }
 main .section-2 {
   background: none;

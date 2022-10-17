@@ -78,8 +78,26 @@ $secondary-text-color: wheat;
         }
     }
 }
+
+main, footer {
+    background: linear-gradient(90deg, #110501, #21030e, #013608, #026a73);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
 main {
-    background-color: $background-color;
+    // background-color: $background-color;
     color: $main-text-color;
     .banner {
         padding-top: 100px;

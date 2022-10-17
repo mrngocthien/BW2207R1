@@ -1,0 +1,48 @@
+.img-container {
+  position: relative;
+  width: 450px;
+  height: 350px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.img-container .more {
+  position: absolute;
+  padding-left: 10px;
+  width: 90px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #222;
+  letter-spacing: 1px;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  transition: color 0.5s;
+  z-index: 1;
+}
+.img-container .more:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 40px;
+  width: 0;
+  background: rgb(16, 16, 16);
+  border-right: 10px solid #464fff;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+.img-container > a:hover .more,
+.img-container > a:hover .more:before {
+  width: 90px;
+  color: #ff46e3;
+}
+
+.img-container > a:hover img {
+  opacity: 0.4;
+  transform: scale(1.1, 1.1) rotate(5deg);
+  transition: all 3s;
+}
+
+.img-container img {
+  transition: all 0.5s;
+}/*# sourceMappingURL=style.css.map */

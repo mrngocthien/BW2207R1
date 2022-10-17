@@ -27,18 +27,31 @@ let slider = tns({
 })
 
 //function for boostrap carousel
-let items = document.querySelectorAll('.carousel .carousel-item')
-
+let items = document.querySelectorAll('.carousel .carousel-item');
 items.forEach((el) => {
-    const minPerSlide = 4
-    let next = el.nextElementSibling
+    const minPerSlide = 4;
+    let next = el.nextElementSibling;
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {
             // wrap carousel by using first child
-        	next = items[0]
+        	next = items[0];
       	}
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
+        let cloneChild = next.cloneNode(true);
+        el.appendChild(cloneChild.children[0]);
+        next = next.nextElementSibling;
     }
 })
+
+//function to show MWII trailer
+let btn = document.querySelector('.button');
+let clip = document.querySelector('.clip');
+let close = document.querySelector('.close');
+btn.onclick = function() {
+    btn.classList.add('active');
+    clip.classList.add('active');
+}
+close.onclick = function() {
+    btn.classList.remove('active');
+    clip.classList.remove('active');
+    
+}

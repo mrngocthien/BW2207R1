@@ -10,6 +10,34 @@ header {
   z-index: 6;
   width: 100%;
 }
+header .navbar {
+  background: linear-gradient(45deg, #1b1817, #270404, #04123f, #013130);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 header .navbar .container-fluid a, header .navbar .container-fluid i {
   color: wheat;
   text-decoration: none;
