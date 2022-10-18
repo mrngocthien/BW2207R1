@@ -89,12 +89,13 @@
                             <p class="card-text">The ultimate weapon is team.
                                 Squad up and fight alongside the iconic operators of Task Force 141 with the return of Modern Warfare®.</p>
                             <h1>Release: 28/10/2022</h1>
-                            <div class="clip">
-                                <iframe width="840" height="473" src="https://www.youtube.com/embed/BkCdEvKUAKA"></iframe>
-                                <b class="close">X</b>
-                            </div>
-                            <a href="#" class="button btn btn-lg mx-2"><div class="play"></div>WATCH TRAILER</a>
+                            <a href="#" class="button btn btn-lg mx-2" onclick="lightbox_open();">WATCH TRAILER</a>
                             <a href="#section-1" class="btn btn-lg mx-2">LEARN MORE</a>
+                            <div id="light">
+                                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                <iframe id="VisaChipCardVideo" width="840" height="473" src="https://www.youtube.com/embed/BkCdEvKUAKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                            <div id="fade" onClick="lightbox_close();"></div>
                         </div>
                     </div>
                 </div>

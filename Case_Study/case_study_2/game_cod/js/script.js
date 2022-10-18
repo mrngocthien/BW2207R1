@@ -42,16 +42,28 @@ items.forEach((el) => {
     }
 })
 
-//function to show MWII trailer
-let btn = document.querySelector('.button');
-let clip = document.querySelector('.clip');
-let close = document.querySelector('.close');
-btn.onclick = function() {
-    btn.classList.add('active');
-    clip.classList.add('active');
+//function to show MWII trailer//
+window.document.onkeydown = function(e) {
+    if (!e) {
+      e = event;
+    }
+    if (e.keyCode == 27) {
+      lightbox_close();
+    }
 }
-close.onclick = function() {
-    btn.classList.remove('active');
-    clip.classList.remove('active');
-    
+  
+function lightbox_open() {
+    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    window.scrollTo(0, 0);
+    document.getElementById('light').style.display = 'block';
+    document.getElementById('fade').style.display = 'block';
+    lightBoxVideo.play();
 }
+
+function lightbox_close() {
+    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    document.getElementById('light').style.display = 'none';
+    document.getElementById('fade').style.display = 'none';
+    lightBoxVideo.pause();
+}
+//end function to show MWII trailer//
