@@ -89,12 +89,13 @@
                             <p class="card-text">Vũ khí tối thượng là đồng đội.
                                 Lập đội và chiến đấu cùng với những người điều hành mang tính biểu tượng của Lực lượng Đặc nhiệm 141 với sự trở lại của Modern Warfare®.</p>
                             <h1>Ngày phát hành: 28/10/2022</h1>
-                            <div class="clip">
-                                <iframe width="840" height="473" src="https://www.youtube.com/embed/BkCdEvKUAKA"></iframe>
-                                <b class="close">X</b>
-                            </div>
-                            <a href="#" class="button btn btn-lg mx-2"><div class="play"></div>XEM TRAILER</a>
+                            <a href="#" class="button btn btn-lg mx-2" onclick="lightbox_open();">XEM TRAILER</a>
                             <a href="#section-1" class="btn btn-lg mx-2">TÌM HIỂU THÊM</a>
+                            <div id="light">
+                                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                <iframe id="VisaChipCardVideo" width="840" height="473" src="https://www.youtube.com/embed/BkCdEvKUAKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                            <div id="fade" onClick="lightbox_close();"></div>
                         </div>
                     </div>
                 </div>

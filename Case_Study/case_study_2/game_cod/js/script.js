@@ -53,7 +53,7 @@ window.document.onkeydown = function(e) {
 }
   
 function lightbox_open() {
-    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    var lightBoxVideo = document.getElementById("mainTrailer");
     window.scrollTo(0, 0);
     document.getElementById('light').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
@@ -61,7 +61,7 @@ function lightbox_open() {
 }
 
 function lightbox_close() {
-    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    var lightBoxVideo = document.getElementById("mainTrailer");
     document.getElementById('light').style.display = 'none';
     document.getElementById('fade').style.display = 'none';
     lightBoxVideo.pause();
