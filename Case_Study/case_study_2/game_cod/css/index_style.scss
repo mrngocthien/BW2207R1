@@ -81,7 +81,7 @@ $secondary-text-color: wheat;
 
 // background-layout //
 $color-bg: #111;
-$color-particle: rgb(238, 246, 244);
+$color-particle: rgb(193, 234, 225);
 $spacing: 2560px;
 $time-1: 60s;
 $time-2: 120s;
@@ -104,7 +104,7 @@ $time-4: 600s;
 
 main {
 
-    //** backround-animation **//
+    //** background-animation **//
     .animation-wrapper {
     position: absolute;
     top: 0;
@@ -269,13 +269,13 @@ main {
             }
             /* make responsive */
             @media screen and (max-width: 577px) {
-                .clip iframe {
+                iframe {
                     width: 280px;
                     height: 158px;
                 }
             }
             @media screen and (max-width: 769px) {
-                .clip iframe {
+                iframe {
                     width: 560px;
                     height: 315px;
                 }
