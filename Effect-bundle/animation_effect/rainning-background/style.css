@@ -5,7 +5,8 @@
 }
 
 body {
-  background: #000;
+  background: linear-gradient(transparent, gray), url("./rainy forest.jpg");
+  background-size: cover;
   overflow: hidden;
   height: 100vh;
 }
