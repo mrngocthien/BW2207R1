@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Glassmorphism-card-hover</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <img src="./img1.png" alt="">
+                <h2>01</h2>
+                <h3>Ngọc Thiện</h3>
+                <h4>Farm Leader</h4>
+                <p>Top 1 hiền nhất trại</p>
+                <a href="#">Tìm hiểu</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <img src="./img2.png" alt="">
+                <h2>02</h2>
+                <h3>Trung Hiếu</h3>
+                <h4>Asisstant</h4>
+                <p>Top có duyên nhất CJ Vina</p>
+                <a href="#">Tìm hiểu</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <img src="./img3.png" alt="">
+                <h2>03</h2>
+                <h3>Thuý Hằng</h3>
+                <h4>Admin-1</h4>
+                <p>Trai đẹp đi đâu hết rồi nhể !</p>
+                <a href="#">Tìm hiểu</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <img src="./img4.png" alt="">
+                <h2>04</h2>
+                <h3>Thị Duyên</h3>
+                <h4>Admin-2</h4>
+                <p>1.2.3 dô, trăm phần trăm !</p>
+                <a href="#">Tìm hiểu</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+            scale: 1.1,
+            speed: 2000,
+            transition: true
+        });
+    </script>
+</body>
+</html>
